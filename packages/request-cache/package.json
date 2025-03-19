@@ -1,0 +1,58 @@
+{
+  "name": "@praha/envelop-request-cache",
+  "version": "0.0.0",
+  "description": "This plugin caches arbitrary values within the request scope to optimize execution flow",
+  "keywords": [
+    "javascript",
+    "typescript",
+    "graphql",
+    "envelop",
+    "cache"
+  ],
+  "homepage": "https://github.com/praha-inc/envelop-plugins/blob/main/packages/request-cache/README.md",
+  "bugs": {
+    "url": "https://github.com/praha-inc/envelop-plugins/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/praha-inc/envelop-plugins.git",
+    "directory": "packages/request-cache"
+  },
+  "license": "MIT",
+  "author": "PrAha, Inc.",
+  "type": "module",
+  "exports": {
+    "require": {
+      "types": "./dist/cjs/index.d.ts",
+      "default": "./dist/cjs/index.cjs"
+    },
+    "import": {
+      "types": "./dist/esm/index.d.ts",
+      "default": "./dist/esm/index.js"
+    }
+  },
+  "main": "./dist/cjs/index.cjs",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/cjs/index.d.ts",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rslib build",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
+    "lint:code": "eslint .",
+    "lint:type": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@rslib/core": "0.5.4",
+    "eslint": "9.22.0",
+    "typescript": "5.8.2",
+    "vitest": "3.0.9"
+  },
+  "publishConfig": {
+    "provenance": true
+  }
+}
