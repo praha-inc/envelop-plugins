@@ -11,14 +11,14 @@ export const createRequestCachePlugin = (options: CreateRequestCachePluginOption
 
   return {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    cache: <T extends (...args: any[]) => any>(callback: T): T => {
+    cache: <T extends (...args: any[]) => any>(callback: T, keys?: string[]): T => {
       return ((...args) => {
         const store = storage.getStore();
         if (!store) {
           throw new Error('Request cache is not available. Make sure to use the "useRequestCache" plugin during execution.');
         }
 
-        const key = `${callback.toString()}-${JSON.stringify(args)}`;
+        const key = `${callback.toString()}-${JSON.stringify(args)}${keys ? `-[${keys.join(',')}]` : ''}`;
         const cached = store[key];
         if (cached) return cached as T;
 
