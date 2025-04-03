@@ -71,6 +71,26 @@ describe('createRequestCachePlugin', () => {
       expect(c).toBe(4);
       expect(spy).toHaveBeenCalledTimes(2);
     });
+
+    it('caches result per keys', async () => {
+      const storage = new AsyncLocalStorage<Record<string, unknown>>();
+      const plugin = createRequestCachePlugin({ storage });
+
+      const spy = vi.fn((a: number, b: number) => a + b);
+      const cachedFunction1 = plugin.cache(spy, ['a']);
+      const cachedFunction2 = plugin.cache(spy, ['b']);
+
+      // eslint-disable-next-line @typescript-eslint/require-await
+      const { a, b } = await storage.run({}, async () => {
+        const a = cachedFunction1(1, 2);
+        const b = cachedFunction2(1, 2);
+        return { a, b };
+      });
+
+      expect(a).toBe(3);
+      expect(b).toBe(3);
+      expect(spy).toHaveBeenCalledTimes(2);
+    });
   });
 
   describe('useRequestCache', () => {
