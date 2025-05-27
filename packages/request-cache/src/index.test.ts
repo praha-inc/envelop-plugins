@@ -93,6 +93,62 @@ describe('createRequestCachePlugin', () => {
     });
   });
 
+  describe('evict', () => {
+    it('throws error if called outside of request context', () => {
+      const plugin = createRequestCachePlugin();
+
+      expect(() => {
+        plugin.evict();
+      }).toThrow('Request cache is not available. Make sure to use the "useRequestCache" plugin during execution.');
+    });
+
+    it('evict caches per request context', async () => {
+      const storage = new AsyncLocalStorage<Record<string, unknown>>();
+      const plugin = createRequestCachePlugin({ storage });
+
+      const spy = vi.fn(() => Math.random());
+      const cachedFunction = plugin.cache(spy);
+
+      // eslint-disable-next-line @typescript-eslint/require-await
+      const result = await storage.run({}, async () => {
+        const a = cachedFunction();
+        plugin.evict();
+        const b = cachedFunction();
+        return { a, b };
+      });
+
+      expect(result.a).not.toBe(result.b);
+      expect(spy).toHaveBeenCalledTimes(2);
+    });
+
+    it('evict only the current request context', async () => {
+      const storage = new AsyncLocalStorage<Record<string, unknown>>();
+      const plugin = createRequestCachePlugin({ storage });
+
+      const spy = vi.fn(() => Math.random());
+      const cachedFunction = plugin.cache(spy);
+
+      const [{ a, b }, { c, d }] = await Promise.all([
+        // eslint-disable-next-line @typescript-eslint/require-await
+        storage.run({}, async () => {
+          const a = cachedFunction();
+          plugin.evict();
+          const b = cachedFunction();
+          return { a, b };
+        }),
+        // eslint-disable-next-line @typescript-eslint/require-await
+        storage.run({}, async () => {
+          const c = cachedFunction();
+          const d = cachedFunction();
+          return { c, d };
+        }),
+      ]);
+      expect(a).not.toBe(b);
+      expect(c).toBe(d);
+      expect(spy).toHaveBeenCalledTimes(3);
+    });
+  });
+
   describe('useRequestCache', () => {
     it('wraps execution in AsyncLocalStorage context', async () => {
       const plugin = createRequestCachePlugin();

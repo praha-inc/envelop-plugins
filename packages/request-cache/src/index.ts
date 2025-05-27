@@ -29,6 +29,16 @@ export const createRequestCachePlugin = (options: CreateRequestCachePluginOption
         return result;
       }) as T;
     },
+    evict: (): void => {
+      const store = storage.getStore();
+      if (!store) {
+        throw new Error('Request cache is not available. Make sure to use the "useRequestCache" plugin during execution.');
+      }
+
+      Object.keys(store).forEach((key) => {
+        delete store[key];
+      });
+    },
     useRequestCache: (): Plugin => ({
       onExecute: ({ executeFn, setExecuteFn }) => {
         setExecuteFn(async (arguments_) => {
@@ -45,5 +55,6 @@ export const createRequestCachePlugin = (options: CreateRequestCachePluginOption
 
 export const {
   cache,
+  evict,
   useRequestCache,
 } = createRequestCachePlugin();
