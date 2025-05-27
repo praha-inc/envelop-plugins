@@ -1,5 +1,11 @@
 # @praha/envelop-request-cache
 
+## 1.2.0
+
+### Minor Changes
+
+- [#77](https://github.com/praha-inc/envelop-plugins/pull/77) [`449f14b`](https://github.com/praha-inc/envelop-plugins/commit/449f14b3ec4a2b5d788066fb49d388d8e896fdb5) Thanks [@kmymso](https://github.com/kmymso)! - Add evict method to clear request cache
+
 ## 1.1.0
 
 ### Minor Changes
