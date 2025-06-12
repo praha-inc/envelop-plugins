@@ -1,5 +1,11 @@
 # @praha/envelop-request-cache
 
+## 1.2.1
+
+### Patch Changes
+
+- [#97](https://github.com/praha-inc/envelop-plugins/pull/97) [`5863112`](https://github.com/praha-inc/envelop-plugins/commit/58631125c6907b503e60e7446537e6959d54f43f) Thanks [@Karibash](https://github.com/Karibash)! - Make it explicitly stated that there are no side effects
+
 ## 1.2.0
 
 ### Minor Changes
