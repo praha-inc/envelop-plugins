@@ -1,5 +1,11 @@
 # @praha/envelop-request-cache
 
+## 1.2.2
+
+### Patch Changes
+
+- [#99](https://github.com/praha-inc/envelop-plugins/pull/99) [`2ce0164`](https://github.com/praha-inc/envelop-plugins/commit/2ce01649ceecb76020adc8369fe635f6098900ba) Thanks [@Karibash](https://github.com/Karibash)! - Fix sideEffects was not boolean
+
 ## 1.2.1
 
 ### Patch Changes
