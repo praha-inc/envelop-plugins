@@ -1,5 +1,11 @@
 # @praha/envelop-request-cache
 
+## 1.2.3
+
+### Patch Changes
+
+- [#181](https://github.com/praha-inc/envelop-plugins/pull/181) [`892d789`](https://github.com/praha-inc/envelop-plugins/commit/892d7893a480537f7b681e2fe37cec3a5cf1fbd6) Thanks [@Karibash](https://github.com/Karibash)! - Add file extensions to import paths in TypeScript declaration files
+
 ## 1.2.2
 
 ### Patch Changes
