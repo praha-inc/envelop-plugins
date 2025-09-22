@@ -51,8 +51,8 @@ importers:
         specifier: 5.3.2
         version: 5.3.2
       '@envelop/testing':
-        specifier: 8.1.3
-        version: 8.1.3(@envelop/core@5.3.2)(@envelop/types@5.2.1)(graphql@16.11.0)
+        specifier: 9.0.0
+        version: 9.0.0(@envelop/core@5.3.2)(@envelop/types@5.2.1)(graphql@16.11.0)
       '@graphql-tools/schema':
         specifier: 10.0.25
         version: 10.0.25(graphql@16.11.0)
@@ -230,11 +230,11 @@ packages:
     resolution: {integrity: sha512-cxgkB66RQB95H3X27jlnxCRNTmPuSTgmBAq6/4n2Dtv4hsk4yz8FadA1ggmd0uZzvKqWD6CR+WFgTjhDqg7eyw==}
     engines: {node: '>=18.0.0'}
 
-  '@envelop/testing@8.1.3':
-    resolution: {integrity: sha512-ZDRa7wKERnnkjogddFwXkf/S+MMGWuNOmNr7YvVmg4ZktblvCsPJwL5TABVDhjC1Uh+hAdY0ddTxxnlPI7/b2Q==}
+  '@envelop/testing@9.0.0':
+    resolution: {integrity: sha512-pZXzKWVa01ZWp041EX7MEgm9bv9KqEPYGXdUIGnh4RXR0QBNPcvgf8kmmTKY4St4Yq6O9i1EfkR0/sUr87IjZQ==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
-      '@envelop/core': ^5.2.3
+      '@envelop/core': ^5.3.0
       '@envelop/types': ^5.2.1
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
 
@@ -2446,7 +2446,7 @@ snapshots:
       '@whatwg-node/promise-helpers': 1.3.2
       tslib: 2.8.1
 
-  '@envelop/testing@8.1.3(@envelop/core@5.3.2)(@envelop/types@5.2.1)(graphql@16.11.0)':
+  '@envelop/testing@9.0.0(@envelop/core@5.3.2)(@envelop/types@5.2.1)(graphql@16.11.0)':
     dependencies:
       '@envelop/core': 5.3.2
       '@envelop/types': 5.2.1
