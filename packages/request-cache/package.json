@@ -51,7 +51,7 @@
     "@envelop/core": "5.4.0",
     "@envelop/testing": "9.0.0",
     "@graphql-tools/schema": "10.0.30",
-    "@rslib/core": "0.18.3",
+    "@rslib/core": "0.18.4",
     "@types/node": "22.19.2",
     "eslint": "9.39.1",
     "typescript": "5.9.3",
