@@ -48,7 +48,7 @@
     "lint:type": "tsc --noEmit"
   },
   "devDependencies": {
-    "@envelop/core": "5.5.0",
+    "@envelop/core": "5.5.1",
     "@envelop/testing": "9.0.0",
     "@graphql-tools/schema": "10.0.31",
     "@rslib/core": "0.19.5",
