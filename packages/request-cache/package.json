@@ -55,7 +55,7 @@
     "@types/node": "24.12.4",
     "eslint": "9.39.4",
     "typescript": "5.9.3",
-    "vitest": "4.1.5"
+    "vitest": "4.1.6"
   },
   "peerDependencies": {
     "@envelop/core": "^5.0.0"
