@@ -50,7 +50,7 @@
   "devDependencies": {
     "@envelop/core": "5.5.1",
     "@envelop/testing": "10.1.1",
-    "@graphql-tools/schema": "10.0.35",
+    "@graphql-tools/schema": "10.0.36",
     "@rslib/core": "0.23.2",
     "@types/node": "24.13.2",
     "eslint": "9.39.4",
