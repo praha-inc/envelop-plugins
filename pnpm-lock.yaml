@@ -36,8 +36,8 @@ importers:
         specifier: 9.39.5
         version: 9.39.5
       pkg-pr-new:
-        specifier: 0.0.80
-        version: 0.0.80
+        specifier: 0.0.86
+        version: 0.0.86
       turbo:
         specifier: 2.10.7
         version: 2.10.7
@@ -1638,8 +1638,8 @@ packages:
     resolution: {integrity: sha512-uB80kBFb/tfd68bVleG9T5GGsGPjJrLAUpR5PZIrhBnIaRTQRjqdJSsIKkOP6OAIFbj7GOrcudc5pNjZ+geV2g==}
     engines: {node: '>=6'}
 
-  pkg-pr-new@0.0.80:
-    resolution: {integrity: sha512-a6Ie3sxNVrIkx5TQhe5+nbPbyLQg0jnrMNDYoXQpDXBaELxdDgwUVmlVThOSj7oKB3kEIrji5xyhSvWAWf5ABQ==}
+  pkg-pr-new@0.0.86:
+    resolution: {integrity: sha512-BwPsw/e1Be7F0SfpxhNc2VSxX7uHgCy46Ck+2Z/vqCwXoePhUBrX/VbcawpAlZgMvQe2iwGbZIQ6HSj9bmCk8A==}
     hasBin: true
 
   pluralize@8.0.0:
@@ -3505,7 +3505,7 @@ snapshots:
 
   pify@4.0.1: {}
 
-  pkg-pr-new@0.0.80: {}
+  pkg-pr-new@0.0.86: {}
 
   pluralize@8.0.0: {}
 
