@@ -197,11 +197,11 @@ importers:
   packages/request-cache:
     devDependencies:
       '@envelop/core':
-        specifier: 5.6.1
-        version: 5.6.1
+        specifier: 6.0.0
+        version: 6.0.0
       '@envelop/testing':
         specifier: 11.0.0
-        version: 11.0.0(@envelop/core@5.6.1)(@envelop/types@6.0.0)(graphql@17.0.2)
+        version: 11.0.0(@envelop/core@6.0.0)(@envelop/types@6.0.0)(graphql@17.0.2)
       '@graphql-tools/schema':
         specifier: 11.0.6
         version: 11.0.6(graphql@17.0.2)
@@ -390,13 +390,13 @@ packages:
   '@emnapi/wasi-threads@1.2.3':
     resolution: {integrity: sha512-ELEBe8PsLvvJ6QMr0zLt8ffvOHW/dc1m3CEzNMg7aJUv3bMaoDtw2TXyDAwkYBuroxxuHEwhRTLJSe5sya547g==}
 
-  '@envelop/core@5.6.1':
-    resolution: {integrity: sha512-KEbJ7yrAA+W7IY9MZzpZJ77w/72ndaV/16+hhPapd+0Ohjqffl0mmF3QWy62/m3nRP4qidD+1eiEjJhS/O38Tg==}
-    engines: {node: '>=18.0.0'}
+  '@envelop/core@6.0.0':
+    resolution: {integrity: sha512-r/FPut3JaDJnH64Hn6umeqxlZNMJsFf2IJmZzmv6F1m+Mxfez1zKmKIOOFFO4DRc6ghqqzZMvIH9r2/LVLWxuw==}
+    engines: {node: '>=22.15.0'}
 
-  '@envelop/instrumentation@1.0.1':
-    resolution: {integrity: sha512-FuexE2qd3Yc1Kh1DjTliwGxb9kyyv4ySBNnfJOxnQasVmGdcqX6AkkO5sIMxLWFRftp8PErOcIn2dQW/1RwytQ==}
-    engines: {node: '>=18.0.0'}
+  '@envelop/instrumentation@2.0.0':
+    resolution: {integrity: sha512-nXW9DAHfJ7Fh5nTnvr0uDUvCvMw017Agvk3MiE58u8Eby6mTwuiCFp16as2sPVODLLeCBs6rmKs0F1tkpbAXYQ==}
+    engines: {node: '>=22.15.0'}
 
   '@envelop/testing@11.0.0':
     resolution: {integrity: sha512-Bw9ylksrfKdYliMHMlAhwoPQUOz1cz7MCq/O2bXV2AeuEdB5JU6IvdWg/Sxav3E+KsbBF6wAW4DRl/RjkSm0YQ==}
@@ -405,10 +405,6 @@ packages:
       '@envelop/core': ^6.0.0
       '@envelop/types': ^6.0.0
       graphql: ^16.0.0 || ^17.0.0
-
-  '@envelop/types@5.2.2':
-    resolution: {integrity: sha512-nl9cmUh8F+2/NNzpcLjzNqtaVn0m8XSzzxrPU2ByHhlz4Hqlc5QBfRsemZkoJMKrMviJXyJYdKZiUP1o70F3Kw==}
-    engines: {node: '>=18.0.0'}
 
   '@envelop/types@6.0.0':
     resolution: {integrity: sha512-og5ZFJtIvmQwa0Yb/5JarUT4XnpxxcPTpPi+5+cYnJaLT4qYvCVxNIkW+r6/JpTcbG++DuCQHSvt9fsTDRNNOA==}
@@ -1254,10 +1250,6 @@ packages:
 
   '@vitest/spy@5.0.5':
     resolution: {integrity: sha512-lwJRExuH417257Q5wv9QYugN9IMJkoxcrKrYxGPQkBzl7wlNpTUxD/5yNX4ESKVUIShKPgkGchYPFMWOOk0wzw==}
-
-  '@whatwg-node/promise-helpers@1.3.2':
-    resolution: {integrity: sha512-Nst5JdK47VIl9UcGwtv2Rcgyn5lWtZ0/mhRQ4G8NN2isxpq2TO30iqHzmwoJycjWuyUfg3GFXqP/gFHXeV57IA==}
-    engines: {node: '>=16.0.0'}
 
   '@whatwg-node/promise-helpers@2.0.1':
     resolution: {integrity: sha512-ziVgm01A9irPLVBaUFei64qp771BrDXldbv5pY6kgFgNtA+7zq8ux6nj/6w8bELGH/+Ttnc76ox04HIjU8nqvg==}
@@ -2202,30 +2194,25 @@ snapshots:
       tslib: 2.8.1
     optional: true
 
-  '@envelop/core@5.6.1':
+  '@envelop/core@6.0.0':
     dependencies:
-      '@envelop/instrumentation': 1.0.1
-      '@envelop/types': 5.2.2
-      '@whatwg-node/promise-helpers': 1.3.2
+      '@envelop/instrumentation': 2.0.0
+      '@envelop/types': 6.0.0
+      '@whatwg-node/promise-helpers': 2.0.1
       tslib: 2.8.1
 
-  '@envelop/instrumentation@1.0.1':
+  '@envelop/instrumentation@2.0.0':
     dependencies:
-      '@whatwg-node/promise-helpers': 1.3.2
+      '@whatwg-node/promise-helpers': 2.0.1
       tslib: 2.8.1
 
-  '@envelop/testing@11.0.0(@envelop/core@5.6.1)(@envelop/types@6.0.0)(graphql@17.0.2)':
+  '@envelop/testing@11.0.0(@envelop/core@6.0.0)(@envelop/types@6.0.0)(graphql@17.0.2)':
     dependencies:
-      '@envelop/core': 5.6.1
+      '@envelop/core': 6.0.0
       '@envelop/types': 6.0.0
       '@graphql-tools/utils': 13.2.0(graphql@17.0.2)
       '@whatwg-node/promise-helpers': 2.0.1
       graphql: 17.0.2
-      tslib: 2.8.1
-
-  '@envelop/types@5.2.2':
-    dependencies:
-      '@whatwg-node/promise-helpers': 1.3.2
       tslib: 2.8.1
 
   '@envelop/types@6.0.0':
@@ -2796,10 +2783,6 @@ snapshots:
       vite: 8.3.5(@types/node@26.6.5)(yaml@2.9.1)
 
   '@vitest/spy@5.0.5': {}
-
-  '@whatwg-node/promise-helpers@1.3.2':
-    dependencies:
-      tslib: 2.8.1
 
   '@whatwg-node/promise-helpers@2.0.1':
     dependencies:
