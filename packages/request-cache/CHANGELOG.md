@@ -1,5 +1,11 @@
 # @praha/envelop-request-cache
 
+## 1.2.4
+
+### Patch Changes
+
+- [#476](https://github.com/praha-inc/envelop-plugins/pull/476) [`0dc29d9`](https://github.com/praha-inc/envelop-plugins/commit/0dc29d9b421a13c178b35cdf44dae45d692a6269) Thanks [@renovate](https://github.com/apps/renovate)! - Update dependency @envelop/core to v6
+
 ## 1.2.3
 
 ### Patch Changes
