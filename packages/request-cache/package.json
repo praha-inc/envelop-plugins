@@ -44,7 +44,7 @@
     "build": "rslib build",
     "test": "vitest run",
     "test:watch": "vitest watch",
-    "lint:code": "eslint .",
+    "lint:code": "oxlint",
     "lint:type": "tsc --noEmit"
   },
   "devDependencies": {
@@ -53,7 +53,7 @@
     "@graphql-tools/schema": "10.1.0",
     "@rslib/core": "0.23.2",
     "@types/node": "24.13.3",
-    "eslint": "9.39.5",
+    "oxlint": "1.90.0",
     "typescript": "5.9.3",
     "vitest": "4.1.11"
   },

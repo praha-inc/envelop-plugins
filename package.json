@@ -1,6 +1,7 @@
 {
   "name": "envelop",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "turbo build",
     "test": "turbo test",
@@ -14,13 +15,10 @@
   "devDependencies": {
     "@changesets/changelog-github": "0.7.0",
     "@changesets/cli": "2.31.1",
-    "@praha/eslint-config-common": "4.0.3",
-    "@praha/eslint-config-definer": "2.0.2",
-    "@praha/eslint-config-javascript": "3.0.11",
-    "@praha/eslint-config-style": "3.0.12",
-    "@praha/eslint-config-typescript": "3.0.12",
+    "@praha/oxlint-config-standard": "1.0.3",
     "@tsconfig/strictest": "2.0.8",
-    "eslint": "9.39.5",
+    "oxlint": "1.90.0",
+    "oxlint-tsgolint": "7.0.2005",
     "pkg-pr-new": "0.0.88",
     "turbo": "2.10.12",
     "vitest": "4.1.11"
