@@ -42,8 +42,8 @@ importers:
         specifier: 5.6.1
         version: 5.6.1
       '@envelop/testing':
-        specifier: 10.2.0
-        version: 10.2.0(@envelop/core@5.6.1)(@envelop/types@5.2.2)(graphql@17.0.2)
+        specifier: 10.2.3
+        version: 10.2.3(@envelop/core@5.6.1)(@envelop/types@5.2.2)(graphql@17.0.2)
       '@graphql-tools/schema':
         specifier: 10.1.0
         version: 10.1.0(graphql@17.0.2)
@@ -222,12 +222,12 @@ packages:
     resolution: {integrity: sha512-FuexE2qd3Yc1Kh1DjTliwGxb9kyyv4ySBNnfJOxnQasVmGdcqX6AkkO5sIMxLWFRftp8PErOcIn2dQW/1RwytQ==}
     engines: {node: '>=18.0.0'}
 
-  '@envelop/testing@10.2.0':
-    resolution: {integrity: sha512-zvhUz7q9bgEOuh78Dm7G9GdgNCxWElYpSP2sramXHY24F4sTyGJUrvynuwgu94WeAOhFyb9YlOPOA893Ygg7og==}
+  '@envelop/testing@10.2.3':
+    resolution: {integrity: sha512-rFWHv6/JMmTYhcxH/TIR1s4J2UD09PHO4EJC56J+alfpJz4f9FHozUSSpZV23+7UcPOTCkqv0mz0NSo3n6V9GQ==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
-      '@envelop/core': ^5.6.0
-      '@envelop/types': ^5.2.1
+      '@envelop/core': ^5.6.1
+      '@envelop/types': ^5.2.2
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
 
   '@envelop/types@5.2.2':
@@ -284,14 +284,14 @@ packages:
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
 
-  '@graphql-tools/utils@11.2.2':
-    resolution: {integrity: sha512-Do2A/t6ayqOma8m7PvpYMsCBswL+NB35BQSng4GWSBqafL2/BnfAZy/NSENPwV721Rm2fG0BHETFC0+FJJZmLw==}
+  '@graphql-tools/utils@12.0.0':
+    resolution: {integrity: sha512-aMdIo/l+8j4lhamWAf+MWHr+lOW8zArSBKXspqtKHgt5I2JF9LS55KDLUe/L9AiJOV/O6qJJ60hgYydbnJHbxg==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
 
-  '@graphql-tools/utils@12.0.0':
-    resolution: {integrity: sha512-aMdIo/l+8j4lhamWAf+MWHr+lOW8zArSBKXspqtKHgt5I2JF9LS55KDLUe/L9AiJOV/O6qJJ60hgYydbnJHbxg==}
+  '@graphql-tools/utils@12.1.0':
+    resolution: {integrity: sha512-+mOuIX7u83/BHG0L9JviMzKid1j35cxOWhLoox47TXHAJ6Tnn30RgrmEQPmk1FhmaQbhJEcwYBDVyieUvZopJw==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
@@ -1015,6 +1015,10 @@ packages:
   '@whatwg-node/promise-helpers@1.3.2':
     resolution: {integrity: sha512-Nst5JdK47VIl9UcGwtv2Rcgyn5lWtZ0/mhRQ4G8NN2isxpq2TO30iqHzmwoJycjWuyUfg3GFXqP/gFHXeV57IA==}
     engines: {node: '>=16.0.0'}
+
+  '@whatwg-node/promise-helpers@2.0.1':
+    resolution: {integrity: sha512-ziVgm01A9irPLVBaUFei64qp771BrDXldbv5pY6kgFgNtA+7zq8ux6nj/6w8bELGH/+Ttnc76ox04HIjU8nqvg==}
+    engines: {node: '>=22.15.0'}
 
   acorn-jsx@5.3.2:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
@@ -2277,11 +2281,11 @@ snapshots:
       '@whatwg-node/promise-helpers': 1.3.2
       tslib: 2.8.1
 
-  '@envelop/testing@10.2.0(@envelop/core@5.6.1)(@envelop/types@5.2.2)(graphql@17.0.2)':
+  '@envelop/testing@10.2.3(@envelop/core@5.6.1)(@envelop/types@5.2.2)(graphql@17.0.2)':
     dependencies:
       '@envelop/core': 5.6.1
       '@envelop/types': 5.2.2
-      '@graphql-tools/utils': 11.2.2(graphql@17.0.2)
+      '@graphql-tools/utils': 12.1.0(graphql@17.0.2)
       '@whatwg-node/promise-helpers': 1.3.2
       graphql: 17.0.2
       tslib: 2.8.1
@@ -2350,7 +2354,7 @@ snapshots:
       graphql: 17.0.2
       tslib: 2.8.1
 
-  '@graphql-tools/utils@11.2.2(graphql@17.0.2)':
+  '@graphql-tools/utils@12.0.0(graphql@17.0.2)':
     dependencies:
       '@graphql-typed-document-node/core': 3.2.0(graphql@17.0.2)
       '@whatwg-node/promise-helpers': 1.3.2
@@ -2358,10 +2362,10 @@ snapshots:
       graphql: 17.0.2
       tslib: 2.8.1
 
-  '@graphql-tools/utils@12.0.0(graphql@17.0.2)':
+  '@graphql-tools/utils@12.1.0(graphql@17.0.2)':
     dependencies:
       '@graphql-typed-document-node/core': 3.2.0(graphql@17.0.2)
-      '@whatwg-node/promise-helpers': 1.3.2
+      '@whatwg-node/promise-helpers': 2.0.1
       cross-inspect: 1.0.1
       graphql: 17.0.2
       tslib: 2.8.1
@@ -2910,6 +2914,10 @@ snapshots:
       tinyrainbow: 3.1.1
 
   '@whatwg-node/promise-helpers@1.3.2':
+    dependencies:
+      tslib: 2.8.1
+
+  '@whatwg-node/promise-helpers@2.0.1':
     dependencies:
       tslib: 2.8.1
 
