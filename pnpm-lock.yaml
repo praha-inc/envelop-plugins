@@ -200,8 +200,8 @@ importers:
         specifier: 6.0.1
         version: 6.0.1
       '@envelop/testing':
-        specifier: 11.0.0
-        version: 11.0.0(@envelop/core@6.0.1)(@envelop/types@6.0.1)(graphql@17.1.0)
+        specifier: 11.0.1
+        version: 11.0.1(@envelop/core@6.0.1)(@envelop/types@6.0.1)(graphql@17.1.0)
       '@graphql-tools/schema':
         specifier: 11.0.9
         version: 11.0.9(graphql@17.1.0)
@@ -395,12 +395,12 @@ packages:
     resolution: {integrity: sha512-BnHXPcYTGl6bskFwaeOwt7G2KwHhATOMfc2ojMno7QMFKBSxkmPs6o092LDJ+PTNHk7wv4pTIWhP4LsJkvHIew==}
     engines: {node: '>=22.15.0'}
 
-  '@envelop/testing@11.0.0':
-    resolution: {integrity: sha512-Bw9ylksrfKdYliMHMlAhwoPQUOz1cz7MCq/O2bXV2AeuEdB5JU6IvdWg/Sxav3E+KsbBF6wAW4DRl/RjkSm0YQ==}
+  '@envelop/testing@11.0.1':
+    resolution: {integrity: sha512-xPxUBaPEcK14+LYOWVVO++buFPergnWkMBRI0NCF01uPHoLn1P3UXVJn6iRGfCHmmJOuNAwugJvxk0AuFR2CSw==}
     engines: {node: '>=22.15.0'}
     peerDependencies:
-      '@envelop/core': ^6.0.0
-      '@envelop/types': ^6.0.0
+      '@envelop/core': ^6.0.1
+      '@envelop/types': ^6.0.1
       graphql: ^16.0.0 || ^17.0.0
 
   '@envelop/types@6.0.1':
@@ -2210,7 +2210,7 @@ snapshots:
       '@whatwg-node/promise-helpers': 2.0.2
       tslib: 2.9.1
 
-  '@envelop/testing@11.0.0(@envelop/core@6.0.1)(@envelop/types@6.0.1)(graphql@17.1.0)':
+  '@envelop/testing@11.0.1(@envelop/core@6.0.1)(@envelop/types@6.0.1)(graphql@17.1.0)':
     dependencies:
       '@envelop/core': 6.0.1
       '@envelop/types': 6.0.1
